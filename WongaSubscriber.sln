@@ -7,9 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueSubscriber", "QueueSub
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueSubscriber.Service", "QueueSubscriber.Service\QueueSubscriber.Service.csproj", "{5CE1DAE4-9D10-4D80-B091-476E9E1B87D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueSubscriber.Interface", "QueueSubscriber.Interface\QueueSubscriber.Interface.csproj", "{9D16F4DD-A929-4AB6-99D9-E1AF7BCE87A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueSubscriber.Interface", "QueueSubscriber.Interface\QueueSubscriber.Interface.csproj", "{9D16F4DD-A929-4AB6-99D9-E1AF7BCE87A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueSubscriber.Test", "QueueSubscriber.Test\QueueSubscriber.Test.csproj", "{B083D867-6DC7-4C78-B4C8-A1C2DEE2DF18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueSubscriber.Test", "QueueSubscriber.Test\QueueSubscriber.Test.csproj", "{B083D867-6DC7-4C78-B4C8-A1C2DEE2DF18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions Folder", "Solutions Folder", "{B7CAB35F-5E6C-4566-8F87-9669D968A9B9}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
