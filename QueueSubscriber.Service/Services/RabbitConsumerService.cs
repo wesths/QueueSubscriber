@@ -36,7 +36,7 @@ namespace QueueSubscriber.Service.Services
                                  autoAck: true,
                                  consumer: consumer);
 
-            Console.WriteLine(" Press [enter] to exit.");
+            Console.WriteLine("I am listening for any messages on Rabbit...");
             Console.ReadLine();
         }
 
