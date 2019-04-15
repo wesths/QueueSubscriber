@@ -14,4 +14,4 @@ Run the docker image in a container
 In a browser go to http://localhost:8081. You sould see the management log in screen for RabbitMQ. Use the default username and password "guest"
 
 ## Run the app
-This is a .Net Core 2.0 console application. Ensure you are running .Net Core 2.0 and open the solution in Visual Studio. Build and Run the application. The console application will appear and allow you to enter a name. This name will be converted into a "Hi my name is, {name}" and sent to RabbitMQ.
+This is a .Net Core 2.0 console application. Ensure you are running .Net Core 2.0 and open the solution in Visual Studio. Build and Run the application. The console application will appear and will connect to the RabbitMQ instance. It will consume any messages currently on the queue. It will convert the message into “Hello {ReceivedName}, I am your father!” and display it in the console.
