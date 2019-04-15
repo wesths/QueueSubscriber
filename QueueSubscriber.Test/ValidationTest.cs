@@ -19,7 +19,7 @@ namespace QueueSubscriber.Test
         {
             string messageToBeConsumed = "Hello my name is, Shane";
 
-            string result = _validationService.ValidateName(messageToBeConsumed);
+            string result = _validationService.ValidateMessage(messageToBeConsumed);
 
             Assert.Equal("Hello Shane, I am your father!", result);
 
@@ -29,7 +29,7 @@ namespace QueueSubscriber.Test
         {
             string messageToBeConsumed = "This string is incorrect";
 
-            string result = _validationService.ValidateName(messageToBeConsumed);
+            string result = _validationService.ValidateMessage(messageToBeConsumed);
 
             Assert.Equal("The name you entered is incorrect", result);
 
@@ -39,7 +39,7 @@ namespace QueueSubscriber.Test
         {
             string messageToBeConsumed = "Hello my name is, ";
 
-            string result = _validationService.ValidateName(messageToBeConsumed);
+            string result = _validationService.ValidateMessage(messageToBeConsumed);
 
             Assert.Equal("Please ensure you enter a name", result);
 

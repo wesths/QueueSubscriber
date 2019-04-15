@@ -12,12 +12,12 @@ namespace QueueSubscriber.Service.Services
         {
         }
 
-        public string ValidateName(string message)
+        public string ValidateMessage(string message)
         {
-            if(message.StartsWith("Hello my name is, "))
+            if (message.StartsWith("Hello my name is, "))
             {
                 var name = message.Split(',').Last().Trim();
-                if(string.IsNullOrEmpty(name))
+                if (string.IsNullOrEmpty(name))
                 {
                     return "Please ensure you enter a name";
                 }

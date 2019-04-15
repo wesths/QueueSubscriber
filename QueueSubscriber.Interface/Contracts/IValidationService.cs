@@ -6,6 +6,6 @@ namespace QueueSubscriber.Interface.Contracts
 {
     public interface IValidationService
     {
-        string ValidateName(string message);
+        string ValidateMessage(string message);
     }
 }

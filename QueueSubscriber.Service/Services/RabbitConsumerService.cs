@@ -30,7 +30,7 @@ namespace QueueSubscriber.Service.Services
             {
                 var body = ea.Body;
                 var message = Encoding.UTF8.GetString(body);
-                Console.WriteLine(_validationService.ValidateName(message));                
+                Console.WriteLine(_validationService.ValidateMessage(message));                
             };
             channel.BasicConsume(queue: _configuration.GetSection("AppSettings:QueueName").Value,
                                  autoAck: true,
@@ -42,7 +42,10 @@ namespace QueueSubscriber.Service.Services
 
         private IModel CreateChannel()
         {
-            var factory = new ConnectionFactory() { HostName = _configuration.GetSection("AppSettings:QueueHostName").Value };
+            var factory = new ConnectionFactory()
+            {
+                HostName = _configuration.GetSection("AppSettings:QueueHostName").Value
+            };
             var connection = factory.CreateConnection();
             var channel = connection.CreateModel();
             return channel;
